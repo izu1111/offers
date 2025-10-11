@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting... Please wait</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- ✅ Adsterra Anti-Adblock Script -->
+  <script type="text/javascript" src="//salvageapplet.com/99/bf/ff/99bfff0b9e8fde2d45b06043e1290a5a.js"></script>
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .message {
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    .spinner {
+      border: 4px solid rgba(255,255,255,0.3);
+      border-top: 4px solid #00ff99;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h2>Redirecting you to the best offer...</h2>
+    <div class="spinner"></div>
+    <p>If you are not redirected automatically, please <a id="manualLink" href="#">click here</a>.</p>
+  </div>
+
+  <script>
+    // ✅ List of rotating offer links
+    const offerLinks = [
+      "https://ouo.io/LmmmZ1",
+      "https://ouo.io/CslAUAA",
+      "https://ouo.io/rjdjAqz",
+      "https://ouo.io/0RHZRF",
+      "https://ouo.io/yY7E49",
+      "https://ouo.io/9a787H",
+      "https://ouo.io/N5wbda",
+      "https://salvageapplet.com/nd22xdaen?key=3e773a60cb5bfdf4d369aa9e86a3131d",
+      "https://www.revenuecpmgate.com/quqv84cs?key=28e501f07d1d6418681d7696d2c582ee"
+    ];
+
+    // ✅ Random redirect function with fallback
+    function redirectUser() {
+      let index = Math.floor(Math.random() * offerLinks.length);
+      let selected = offerLinks[index];
+      window.location.href = selected;
+
+      // fallback if redirect fails after 5 seconds
+      setTimeout(() => {
+        index = (index + 1) % offerLinks.length;
+        window.location.href = offerLinks[index];
+      }, 5000);
+    }
+
+    document.getElementById("manualLink").addEventListener("click", redirectUser);
+    window.onload = redirectUser;
+  </script>
+</body>
+</html>
