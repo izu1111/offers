@@ -1,70 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>💸 Unlock Instant Cash & Freebies!</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trending Quiz — Get Your AI Result & Rewards</title>
+
   <style>
-    body {
-      background: linear-gradient(90deg,#4f8cff 0%,#52d776 100%);
-      font-family: 'Montserrat', Arial, sans-serif;
-      margin: 0; padding: 0;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 420px;
-      margin: 60px auto; background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 6px 32px rgba(52,152,219,0.18);
-      padding: 28px 22px; text-align: center;
-    }
-    .banner-img {
-      width: 110px; height: 110px; margin-bottom: 18px;
-      border-radius: 16px; box-shadow: 0 4px 16px rgba(52,152,219,0.11);
-      object-fit: cover;
-    }
-    .headline {
-      color: #3498db; font-size: 1.5em; font-weight: bold; margin-bottom: 12px;
-    }
-    .cta-btn {
-      display: inline-block; background: #4f8cff; color: #fff;
-      font-size: 1.18em; font-weight: bold; border-radius: 8px;
-      padding: 14px 28px; margin-top: 12px; text-decoration: none;
-      box-shadow: 0 2px 10px rgba(52,152,219,0.12);
-      transition: background 0.2s;
-    }
-    .cta-btn:hover { background: #52d776; color: #fff; }
-    .note {
-      font-size: 0.95em; color: #34495e; margin-top: 18px;
-    }
-    .adsterra-ids { font-size: 0.85em; color: #888; margin-top: 18px; }
+    :root{--accent:#4f8cff;--accent2:#52d776}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#f0f6ff 0%,#f7fff4 100%);color:#1f2d3d}
+    .wrap{max-width:760px;margin:40px auto;padding:28px;background:#fff;border-radius:14px;box-shadow:0 8px 40px rgba(16,40,80,0.06)}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero img{width:160px;height:160px;border-radius:12px;object-fit:cover}
+    .headline{font-size:1.35rem;color:var(--accent);font-weight:700;margin:0}
+    .sub{color:#4b5563;margin-top:8px}
+    .cta{display:inline-block;margin-top:18px;padding:14px 22px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(79,140,255,0.18)}
+    .info{margin-top:18px;background:#f8fafc;padding:12px;border-radius:8px;color:#334155}
+    .ad-block{margin:22px 0;padding:14px;border:1px dashed #e2e8f0;border-radius:8px;background:#fff}
+    .small{font-size:0.9rem;color:#64748b}
+    footer{margin-top:20px;font-size:0.85rem;color:#94a3b8}
   </style>
-  <!-- Adsterra Popunder Scripts -->
-  <script type="text/javascript">var adsterra = {spotId: "27682982"};</script>
-  <script type="text/javascript" src="//www.profitabledisplaynetwork.com/js/popunder.js"></script>
-  <script type="text/javascript">var adsterra = {spotId: "27668796"};</script>
-  <script type="text/javascript" src="//www.profitabledisplaynetwork.com/js/popunder.js"></script>
-  <script type="text/javascript">var adsterra = {spotId: "27667410"};</script>
-  <script type="text/javascript" src="//www.profitabledisplaynetwork.com/js/popunder.js"></script>
 </head>
 <body>
-  <div class="container">
-    <img class="banner-img" src="https://raw.githubusercontent.com/izu1111/izu1111.github.io/main/banner1.png" alt="Rewards Banner" />
-    <div class="headline">
-      💸 Unlock Instant Cash & Freebies!
-    </div>
-    <a class="cta-btn" href="https://ouo.io/LmmmZ1" target="_blank">
-      👉 Tap Here to Get Reward & Start Earning!
-    </a>
-    <div class="note">
-      After clicking, you will be directed to the offer:<br>
-      <a href="https://www.mobtrk.link/view.php?id=5541424&pub=3301899" target="_blank" style="color: #3498db; text-decoration: underline;">Get your gift or cash reward!</a>
-      <br>
-      Every visit earns you CPM and CPA. Share for more cash!
-    </div>
-    <div class="adsterra-ids">
-      Adsterra SmartLink IDs included: 27682982, 27668796, 27667410
-    </div>
-  </div>
+  <main class="wrap">
+    <section class="hero">
+      <!-- Replace this image URL with your own hosted banner if you have one -->
+      <img src="https://raw.githubusercontent.com/izu1111/izu1111.github.io/main/personality_quiz_banner.png" alt="AI Personality Quiz Banner" />
+      <div>
+        <h1 class="headline">Trending.com AI Personality Quiz — Get Instant Results & Rewards</h1>
+        <p class="sub">Take a short 10-question quiz to get an AI-generated personality result with image and description. Complete the quiz and reach $1.20 in ad revenue for conversion.</p>
+        <a class="cta" id="main-cta" href="https://ouo.io/LmmmZ1" target="_blank" rel="noopener">Take the Quiz & Get Reward</a>
+        <div class="info">
+          <strong>Offer details:</strong>
+          <p class="small">This is an exclusive CPAlead offer from Trending.com. Users complete a 10-question quiz and receive an AI result. CPA conversion condition: $1.20 ad revenue from the quiz offer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad-block" id="ad-area">
+      <!-- Inline ad wrappers: the external scripts you provided will append/replace content here.
+           Keep this container visible so ad code has a place to render. -->
+      <div id="container-921db2a6124127c7212a195e1e395c4c"></div>
+
+      <!-- Iframe / inline ad script (first) -->
+      <div style="margin-top:12px;">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : 'b4b47b0f6647328b85d534f2d040c51b',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script type="text/javascript" src="//offensivefountainrabbit.com/b4b47b0f6647328b85d534f2d040c51b/invoke.js"></script>
+      </div>
+
+      <!-- Additional script includes -->
+      <script type='text/javascript' src='//offensivefountainrabbit.com/f2/26/eb/f226eb42eda25a690a64a7f5c6130829.js'></script>
+
+      <!-- Direct ad URL (can be used as image or iframe source if needed) -->
+      <!-- https://offensivefountainrabbit.com/dnndp4rm?key=235e9fe8430dede1673cd62b75f1e829 -->
+
+      <script type='text/javascript' src='//offensivefountainrabbit.com/86/96/d1/8696d16d03addf4b9e761660a974e116.js'></script>
+
+      <!-- Async invocation script which will use the container div above -->
+      <script async="async" data-cfasync="false" src="//offensivefountainrabbit.com/921db2a6124127c7212a195e1e395c4c/invoke.js"></script>
+    </section>
+
+    <section class="small">
+      <p>Direct offer link (for reference): <a href="https://www.mobtrk.link/view.php?id=5541424&pub=3301899" target="_blank" rel="noopener">https://www.mobtrk.link/view.php?id=5541424&pub=3301899</a></p>
+      <p>Adsterra SmartLink IDs in your other page: 27682982, 27668796, 27667410</p>
+    </section>
+
+    <footer>
+      <p>Make sure to test the page on desktop and mobile. If Adsterra requires the domain verified, add your custom domain in your Adsterra account and point DNS to GitHub Pages or Netlify.</p>
+    </footer>
+  </main>
 </body>
 </html>
